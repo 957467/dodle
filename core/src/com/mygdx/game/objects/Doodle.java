@@ -7,12 +7,12 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.mygdx.game.screens.GameSettings;
 
-public class ShipObject extends GameObject {
+public class Doodle extends GameObject {
 
     long lastShotTime;
     int livesLeft;
 
-    public ShipObject(int x, int y, int width, int height, String texturePath, World world) {
+    public Doodle(int x, int y, int width, int height, String texturePath, World world) {
         super(texturePath, x, y, width, height, GameSettings.SHIP_BIT, world);
         body.setLinearDamping(10);
         livesLeft = 3;

@@ -2,7 +2,6 @@ package com.mygdx.game.screens;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.ScreenAdapter;
 import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.ScreenUtils;
@@ -19,7 +18,7 @@ import com.mygdx.game.components.ButtonView;
 import com.mygdx.game.managers.ContactManager;
 import com.mygdx.game.managers.MemoryManager;
 import com.mygdx.game.objects.BulletObject;
-import com.mygdx.game.objects.ShipObject;
+import com.mygdx.game.objects.Doodle;
 
 
 
@@ -29,7 +28,7 @@ public class GameScreen extends ScreenAdapter {
     MyGdxGame myGdxGame;
     GameSession gameSession;
 
-    ShipObject shipObject;
+    Doodle shipObject;
 
     MovingBackgroundView backgroundView;
     ImageView topBlackoutView;
@@ -57,7 +56,7 @@ public class GameScreen extends ScreenAdapter {
         gameSession = new GameSession();
 
         contactManager = new ContactManager(myGdxGame.world);
-        shipObject = new ShipObject(
+        shipObject = new Doodle(
                 GameSettings.SCREEN_WIDTH / 2, 150,
                 GameSettings.SHIP_WIDTH, GameSettings.SHIP_HEIGHT,
                 GameResources.SHIP_IMG_PATH,
@@ -173,7 +172,7 @@ public class GameScreen extends ScreenAdapter {
             myGdxGame.world.destroyBody(shipObject.body);
         }
 
-        shipObject = new ShipObject(
+        shipObject = new Doodle(
                 GameSettings.SCREEN_WIDTH / 2, 150,
                 GameSettings.SHIP_WIDTH, GameSettings.SHIP_HEIGHT,
                 GameResources.SHIP_IMG_PATH,

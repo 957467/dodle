@@ -3,7 +3,7 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.GlyphLayout;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
-import javax.swing.text.View;
+
 
 public class TextView extends View {
     protected BitmapFont font;

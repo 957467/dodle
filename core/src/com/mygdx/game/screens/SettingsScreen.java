@@ -6,14 +6,15 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.mygdx.game.MyGdxGame;
+import com.mygdx.game.components.ImageView;
+import com.mygdx.game.components.MovingBackgroundView;
+import com.mygdx.game.components.TextView;
 import com.mygdx.game.managers.MemoryManager;
 
 import java.util.ArrayList;
 
 import com.mygdx.game.components.ButtonView;
-import components.ImageView;
-import components.MovingBackgroundView;
-import components.TextView;
+
 
 public class SettingsScreen extends ScreenAdapter {
 

@@ -7,9 +7,9 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.mygdx.game.MyGdxGame;
 import com.mygdx.game.components.ButtonView;
+import com.mygdx.game.components.MovingBackgroundView;
+import com.mygdx.game.components.TextView;
 
-import components.MovingBackgroundView;
-import components.TextView;
 
 public class MenuScreen extends ScreenAdapter {
 
